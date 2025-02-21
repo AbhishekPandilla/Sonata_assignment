@@ -1,16 +1,13 @@
 def pennymac(alphabet_soup):
     given_word = list("PENNYMAC") # Storing in form of list to iterate
-  
     bowl = list(alphabet_soup)
+
     for i in range (0,len(given_word)):
         for letter in given_word:
             if letter in bowl:
-                bowl.remove(letter)  
-                
+                bowl.remove(letter)            
             else:
                 return i
-      
-
 
 alphabet_soup = "CAMYNNEPCAMYNNEPCAMYNN"
 output = pennymac(alphabet_soup)
